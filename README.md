@@ -65,14 +65,14 @@ python -m pip install requests
 **Mode normal** (logs visibles dans le Terminal) :
 \```bash
 cd ~/Desktop
-python3 heart.py
+python3 auto-connect.py
 \```
 > ⚠️ Fermer le Terminal arrête le script.
 
 **Mode arrière-plan** (survit à la fermeture du Terminal) :
 \```bash
 cd ~/Desktop
-nohup python3 heart.py > /dev/null 2>&1 &
+nohup python3 auto-connect.py > /dev/null 2>&1 &
 \```
 > Les logs sont enregistrés dans `~/Desktop/wifi_imt.log`.
 
@@ -81,14 +81,14 @@ nohup python3 heart.py > /dev/null 2>&1 &
 **Mode normal** (logs visibles dans l'invite de commandes) :
 \```cmd
 cd %USERPROFILE%\Desktop
-python heart.py
+python auto-connect.py
 \```
 > ⚠️ Fermer la fenêtre cmd arrête le script.
 
 **Mode arrière-plan** (survit à la fermeture de cmd) :
 \```cmd
 cd %USERPROFILE%\Desktop
-start /B pythonw heart.py
+start /B pythonw auto-connect.py
 \```
 > Les logs sont enregistrés dans `%USERPROFILE%\Desktop\wifi_imt.log`.
 
@@ -105,12 +105,12 @@ Ctrl + C
 
 Mode arrière-plan :
 \```bash
-pkill -f heart.py
+pkill -f auto-connect.py
 \```
 
 Vérifier si le script tourne :
 \```bash
-ps aux | grep heart.py
+ps aux | grep auto-connect.py
 \```
 
 ### Windows
@@ -182,7 +182,7 @@ type nul > %USERPROFILE%\Desktop\wifi_imt.log
 
 | Fichier | Description |
 |---|---|
-| `heart.py` | Script principal |
+| `auto-connect.py` | Script principal |
 | `wifi_imt.log` | Fichier de logs (créé automatiquement au premier lancement) |
 | `README.md` | Ce fichier |
 
