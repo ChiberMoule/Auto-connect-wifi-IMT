@@ -7,7 +7,7 @@ Script Python qui maintient automatiquement la connexion au portail Wi-Fi IMT en
 ## 📋 Prérequis
 
 - Python 3.x installé
-- Le fichier `heart.py` présent sur ton Bureau
+- Le fichier `auto-connect.py` présent sur ton Bureau
 
 ---
 
